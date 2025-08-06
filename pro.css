@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #e0f7fa, #e1bee7);
+  color: #333;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.left img {
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.right {
+  max-width: 600px;
+  margin-left: 50px;
+}
+
+.right h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.right .name {
+  color: #8e24aa;
+}
+
+.right h2 {
+  font-size: 1.5rem;
+  color: #0097a7;
+  margin-bottom: 20px;
+}
+
+.right p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.buttons .btn {
+  text-decoration: none;
+  padding: 12px 25px;
+  margin-right: 10px;
+  background-color: #8e24aa;
+  color: white;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.buttons .btn:hover {
+  background-color: #6a1b9a;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #f3e5f5;
+  font-size: 0.9rem;
+  margin-top: 50px;
+}
+.typing-text::after {
+  content: '|';
+  margin-left: 5px;
+  animation: blink 0.7s infinite;
+  color: #0097a7;
+  font-weight: bold;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .right {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .buttons .btn {
+    display: block;
+    margin: 10px auto;
+  }
+}
